@@ -1,0 +1,32 @@
+---
+engine: julia
+---
+
+```{julia}
+ENV["QUARTO_JULIA_PROJECT"]
+```
+
+```{julia}
+#| include: false
+import PythonCall
+```
+
+```{julia}
+using CondaPkg
+CondaPkg.status()
+```
+
+```{julia}
+CondaPkg.which("python")
+```
+
+```{python}
+import sys
+print(sys.prefix)
+```
+
+```{python}
+import matplotlib.pyplot as plt
+# the line below crashes QuartoNotebookRunner
+plt.subplots()
+```
