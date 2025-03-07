@@ -1,4 +1,5 @@
 Trying to run a Quarto QMD document with both Python and Julia cells using https://github.com/PumasAI/QuartoNotebookRunner.jl.
+Used as a reproducible example for https://github.com/PumasAI/QuartoNotebookRunner.jl/issues/276.
 
 1. Install [pixi](https://pixi.sh/latest/)
 1. Instantiate the julia environment.
