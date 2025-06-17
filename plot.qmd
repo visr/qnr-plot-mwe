@@ -7,7 +7,6 @@ ENV["QUARTO_JULIA_PROJECT"]
 ```
 
 ```{julia}
-#| include: false
 import PythonCall
 ```
 
@@ -26,7 +25,17 @@ print(sys.prefix)
 ```
 
 ```{python}
-import matplotlib.pyplot as plt
-# the line below crashes QuartoNotebookRunner
-plt.subplots()
+import seaborn as sns
+sns.set_theme(style="ticks")
+
+df = sns.load_dataset("penguins")
+sns.pairplot(df, hue="species")
+```
+
+```{python}
+# import matplotlib.pyplot as plt
+
+# plt.plot([1, 2, 3, 4])
+# plt.ylabel('some numbers')
+# plt.show()
 ```

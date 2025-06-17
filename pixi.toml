@@ -6,12 +6,14 @@ platforms = ["win-64", "linux-64", "osx-arm64"]
 version = "0.1.0"
 
 [tasks]
-plot = { cmd = "quarto render plot.qmd", env = { QUARTO_JULIA_PROJECT = "$PIXI_PROJECT_ROOT" } }
+plot = { cmd = "quarto preview plot.qmd", env = { QUARTO_JULIA_PROJECT = "$PIXI_PROJECT_ROOT" } }
 
 [dependencies]
 python = ">=3.13.2,<3.14"
 quarto = ">=1.6.41,<2"
-matplotlib = ">=3.10.1,<4"
+matplotlib = ">=3.10.3,<4"
+seaborn = ">=0.13.2,<0.14"
+plotly = ">=6.1.2,<7"
 
 [activation.env]
 JULIA_CONDAPKG_BACKEND = "Null"

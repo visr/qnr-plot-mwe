@@ -2,9 +2,9 @@ Trying to run a Quarto QMD document with both Python and Julia cells using https
 Used as a reproducible example for https://github.com/PumasAI/QuartoNotebookRunner.jl/issues/276.
 
 1. Install [pixi](https://pixi.sh/latest/)
-1. Instantiate the julia environment.
-1. Run `pixi run plot`
-2. See if the line `plt.subplots()` produces the error below.
+2. Instantiate the julia environment.
+3. Run `pixi run plot`
+4. See if the notebook renders properly with inline plots.
 
 On Windows I get the following crash:
 
